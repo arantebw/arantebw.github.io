@@ -19,7 +19,7 @@
  */
 
 #profile {
-    background-color: red;
+    background: linear-gradient(to right, red, yellow);
 }
 
 #content {
@@ -50,7 +50,7 @@
  */
 
 #projects {
-    background-color: orange;
+    background: linear-gradient(to right, orange, yellow);
 }
 
 /*
@@ -60,7 +60,7 @@
  */
  
 #skillset {
-    background-color: yellow;
+    background: linear-gradient(to right, yellow, green);
 }
 
 /*
@@ -70,7 +70,7 @@
  */
 
 #about {
-    background-color: green;
+    background: linear-gradient(to right, green, indigo);
 }
 
 #profile,
