@@ -1,0 +1,34 @@
+/*
+ *
+ * General rules
+ *
+ */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#profile {
+    background-color: red;
+}
+
+#projects {
+    background-color: orange;
+}
+
+#skillset {
+    background-color: yellow;
+}
+
+#about {
+    background-color: green;
+}
+
+#profile,
+#projects,
+#skillset,
+#about {
+    height: 100vh;
+}
