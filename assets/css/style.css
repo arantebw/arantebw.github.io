@@ -101,7 +101,7 @@
  */
 
 #projects {
-    background: linear-gradient(to right, orange, yellow);
+    background: linear-gradient(to bottom, #f90 0%, #000 100%);
 }
 
 /*
@@ -111,7 +111,7 @@
  */
  
 #skillset {
-    background: linear-gradient(to right, yellow, green);
+    background: linear-gradient(to bottom, #0c0 0%, #000 100%);
 }
 
 /*
@@ -121,7 +121,7 @@
  */
 
 #about {
-    background: linear-gradient(to right, green, indigo);
+    background: linear-gradient(to bottom, #80f 0%, #000 100%);
 }
 
 #profile,
