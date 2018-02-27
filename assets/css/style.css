@@ -19,12 +19,12 @@
  */
 
 #profile {
-    background: linear-gradient(to bottom, #9cf 0%, #036 100%);
+    background: linear-gradient(to bottom, #0073e6 0%, #000 100%);
 }
 
 #profile > a#left,
 #profile > a#right {
-    font-size: 0.8em;
+    font-size: 1em;
     text-decoration: none;
     position: absolute;
     top: 15px;
@@ -41,7 +41,7 @@
 
 #profile > a#left:hover,
 #profile > a#right:hover {
-    color: #036;
+    color: #f90;
 }
 
 #profile > #content > h5 {
@@ -86,7 +86,7 @@
     font-size: 1.5em;
     list-style: none;
     font-weight: bold;
-    color: #036;
+    color: #f90;
 }
 
 #content > h5 + ul + p {
