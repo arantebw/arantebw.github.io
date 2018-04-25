@@ -1,3 +1,3 @@
-# web-dev-portfolio
+# My Web Developer Portfolio
 
-My web developer portfolio website.
+A static website displaying the projects I have created for the web.
