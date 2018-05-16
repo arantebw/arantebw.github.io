@@ -5,11 +5,14 @@
  */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Muli', sans-serif;
-    /* font-family: 'Open Sans', sans-serif; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Open Sans', sans-serif; */
+}
+
+body {
+  font-family: 'Muli', sans-serif;
 }
 
 /*
@@ -19,79 +22,79 @@
  */
 
 #profile {
-    background: linear-gradient(to bottom, #0073e6 0%, #000 100%);
+  background: linear-gradient(to bottom, #0073e6 0%, #000 100%);
 }
 
 #profile > a#left,
 #profile > a#right {
-    font-size: 1em;
-    text-decoration: none;
-    position: absolute;
-    top: 15px;
-    color: #39f;
+  font-size: 1em;
+  text-decoration: none;
+  position: absolute;
+  top: 15px;
+  color: #39f;
 }
 
 #profile > a#left {
-    left: 15px;
+  left: 15px;
 }
 
 #profile > a#right {
-    right: 15px;
+  right: 15px;
 }
 
 #profile > a#left:hover,
 #profile > a#right:hover {
-    color: #f90;
+  color: #f90;
 }
 
 #profile > #content > h5 {
-    font-size: 2em;
-    font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #profile > #content > img {
-    height: 30vh;
-    border-radius: 50%;
-    border: 8px solid #fff;
-    padding: 2px;
+  height: 30vh;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  padding: 2px;
 }
 
 #profile > a:last-child {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #003366;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #003366;
 }
 
 #profile > a:last-child:hover {
-    color: #66b3ff;
+  color: #66b3ff;
 }
 
 #content {
-    width: 500px;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 500px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #content > h5 {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 #content > h5 + ul {
-    margin: 20px 0;
-    font-size: 1.5em;
-    list-style: none;
-    font-weight: bold;
-    color: #f90;
+  margin: 20px 0;
+  font-size: 1.5em;
+  list-style: none;
+  font-weight: bold;
+  color: #f90;
 }
 
 #content > h5 + ul + p {
-    line-height: 2;
-    color: #66b3ff;
+  line-height: 2;
+  color: #66b3ff;
 }
 
 /*
@@ -101,7 +104,11 @@
  */
 
 #projects {
-    background: linear-gradient(to bottom, #f90 0%, #000 100%);
+  background: linear-gradient(to bottom, #f90 0%, #000 100%);
+}
+
+#projects > h3 {
+  text-align: center;
 }
 
 /*
@@ -111,7 +118,11 @@
  */
  
 #skillset {
-    background: linear-gradient(to bottom, #0c0 0%, #000 100%);
+  background: linear-gradient(to bottom, #0c0 0%, #000 100%);
+}
+
+#skillset > h3 {
+  text-align: center;
 }
 
 /*
@@ -120,15 +131,26 @@
  *
  */
 
-#about {
-    background: linear-gradient(to bottom, #80f 0%, #000 100%);
+#contact {
+  background: linear-gradient(to bottom, #80f 0%, #000 100%);
+  position: relative;
+}
+
+#projects > h3,
+#skillset > h3,
+#contact > h3 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 #profile,
 #projects,
 #skillset,
-#about {
-    height: 100vh;
+#contact {
+  height: 100vh;
 }
 
 /*
@@ -137,9 +159,12 @@
  *
  */
 
-footer {
-    background: #000;
-    color: lightgrey;
-    font-size: 0.8em;
-    text-align: center;
+#contact > footer {
+  background: #000;
+  color: lightgrey;
+  font-size: 0.8em;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
