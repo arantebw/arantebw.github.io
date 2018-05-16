@@ -8,7 +8,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: 'Open Sans', sans-serif; */
 }
 
 body {
@@ -22,44 +21,52 @@ body {
  */
 
 #profile {
-  background: linear-gradient(to bottom, #0073e6 0%, #000 100%);
+  background-color: rgb(33, 150, 243);
+  background-image: url('../img/abstract.png');
+  background-size: cover;
 }
 
-#profile > a#left,
-#profile > a#right {
+#profile > div {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.8);
+}
+
+#profile > div > header > a#left,
+#profile > div > header > a#right {
   font-size: 1em;
   text-decoration: none;
   position: absolute;
   top: 15px;
-  color: #39f;
+  color: #000;
 }
 
-#profile > a#left {
+#profile > div > header > a#left {
   left: 15px;
 }
 
-#profile > a#right {
+#profile > div > header > a#right {
   right: 15px;
 }
 
-#profile > a#left:hover,
-#profile > a#right:hover {
+#profile > div > header > a#left:hover,
+#profile > div > header > a#right:hover {
   color: #f90;
 }
 
-#profile > #content > h5 {
-  font-size: 2em;
+#profile > div > #content > h1 {
+  font-size: 50px;
   font-family: 'Open Sans', sans-serif;
 }
 
-#profile > #content > img {
+#profile > div > #content > img {
   height: 30vh;
   border-radius: 50%;
   border: 8px solid #fff;
   padding: 2px;
 }
 
-#profile > a:last-child {
+#profile > div > a:last-child {
   position: absolute;
   bottom: 15px;
   left: 50%;
@@ -67,7 +74,7 @@ body {
   color: #003366;
 }
 
-#profile > a:last-child:hover {
+#profile > div > a:last-child:hover {
   color: #66b3ff;
 }
 
@@ -80,21 +87,21 @@ body {
   transform: translate(-50%, -50%);
 }
 
-#content > h5 {
+#content > h1 {
   color: rgb(255, 255, 255);
 }
 
-#content > h5 + ul {
+#content > h1 + ul {
   margin: 20px 0;
-  font-size: 1.5em;
+  font-size: 25px;
   list-style: none;
   font-weight: bold;
   color: #f90;
 }
 
-#content > h5 + ul + p {
+#content > h1 + ul + p {
   line-height: 2;
-  color: #66b3ff;
+  color: #000;
 }
 
 /*
@@ -131,7 +138,7 @@ body {
  *
  */
 
-#contact {
+ #contact {
   background: linear-gradient(to bottom, #80f 0%, #000 100%);
   position: relative;
 }
@@ -144,6 +151,7 @@ body {
   letter-spacing: 2px;
   padding-top: 15px;
   padding-bottom: 15px;
+  font-size: 25px;
 }
 
 #profile,
@@ -159,7 +167,7 @@ body {
  *
  */
 
-#contact > footer {
+ #contact > footer {
   background: #000;
   color: lightgrey;
   font-size: 0.8em;
@@ -167,4 +175,6 @@ body {
   bottom: 0;
   width: 100%;
   text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
