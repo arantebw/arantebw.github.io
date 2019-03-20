@@ -1,15 +1,15 @@
 /*
- *
- * General rules
- *
- */
+*
+* General rules
+*
+*/
 :root {
-    --color1: #008eb3;
-    --color1-custom-rgba: rgba(0, 142, 179, 0.9);
-    --color2: #00004d;
-    --color3: #a7e5e0;
-    --color4: #e4dbbe;
-    --color5: #bb8f5b;
+  --color1: #008eb3;
+  --color1-custom-rgba: rgba(0, 142, 179, 0.9);
+  --color2: #00004d;
+  --color3: #a7e5e0;
+  --color4: #e4dbbe;
+  --color5: #bb8f5b;
 }
 
 * {
@@ -30,20 +30,20 @@ body {
 }
 
 /*
- *
- * Profile section
- *
- */
+*
+* Profile section
+*
+*/
 
 #profile {
-    background-image: url('../img/abstract.png');
+  background-image: url('../img/abstract.png');
 }
 
 #profile > div {
-    width: 100%;
-    height: 100%;
-    background-color: var(--color1-custom-rgba);
-    background-opacity: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color1-custom-rgba);
+  opacity: 50%;
 }
 
 #profile > div > header > a#left,
@@ -86,13 +86,13 @@ body {
   transform: translate(-50%, -50%);
 }
 
-#content > h1 {
-  font-size: 48px;
-  color: var(--color2);
-  letter-spacing: 3px;
-  font-family: 'Muli';
-  font-weight: 900;
+#my-name {
+  font-size: 96px;
+  color: var(--color5);
+  font-family: 'Yesteryear';
+  font-weight: 100;
   margin-top: 24px;
+  text-shadow: 2px 2px var(--color2);
 }
 
 #content > h1 + ul {
@@ -102,7 +102,7 @@ body {
 }
 #content > h1 + ul,
 #content > h1 + ul > li > span {
-    color: #fff;
+  color: #fff;
 }
 
 #content > h1 + ul > li {
@@ -113,8 +113,9 @@ body {
 }
 
 #content > h1 + ul > li > span.current-role {
-    color: var(--color2);
-    font-size: 32px;
+  color: var(--color2);
+  font-size: 32px;
+  text-shadow: 2px 2px var(--color5);
 }
 
 #content > h1 + ul + p {
@@ -126,26 +127,26 @@ body {
   text-indent: 32px;
 }
 #content > h1 + ul + p:first-letter {
-    font-size: 54px;
-    font-family: 'Tangerine';
-    font-weight: 700;
+  font-size: 54px;
+  font-family: 'Tangerine';
+  font-weight: 700;
 }
 #content > h1 + ul + p:first-line {
-    line-height: 0.7;
+  line-height: 0.7;
 }
 
 #content > h1 + ul + p > a {
-    color: #000;
-    text-decoration: none;
-    border-bottom: 1px dotted;
-    padding-bottom: 2px;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  padding-bottom: 2px;
 }
 
 /*
- *
- * Projects section
- *
- */
+*
+* Projects section
+*
+*/
 
 #projects {
   background-color: #bbaa5e;
@@ -156,13 +157,13 @@ body {
 }
 
 /*
- *
- * Skillset section
- *
- */
- 
+*
+* Skillset section
+*
+*/
+
 #skillset {
-    background-color: #2ebdbd;
+  background-color: #2ebdbd;
 }
 
 #skillset > h3 {
@@ -170,13 +171,13 @@ body {
 }
 
 /*
- *
- * About section
- *
- */
+*
+* About section
+*
+*/
 
- #contact {
-    background-color: #bb8f5b;
+#contact {
+  background-color: #bb8f5b;
   position: relative;
 }
 
@@ -199,12 +200,12 @@ body {
 }
 
 /*
- *
- * Footer
- *
- */
+*
+* Footer
+*
+*/
 
- #contact > footer {
+#contact > footer {
   background: #000;
   color: lightgrey;
   font-size: 0.8em;
