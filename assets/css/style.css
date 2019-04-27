@@ -1,8 +1,8 @@
 /*
-*
-* General rules
-*
-*/
+ *
+ * General rules
+ *
+ */
 :root {
     --color1: #008eb3;
     --color1-custom-rgba: rgba(0, 142, 179, 0.9);
@@ -31,10 +31,10 @@ body {
 }
 
 /*
-*
-* Profile section
-*
-*/
+ *
+ * Profile section
+ *
+ */
 
 #profile {
     background-image: url('../img/abstract.png');
@@ -115,7 +115,7 @@ body {
 }
 
 #content > h1 + ul > li {
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 900;
     display: inline-block;
     letter-spacing: 1px;
@@ -123,13 +123,13 @@ body {
 
 #content > h1 + ul > li > span.current-role {
     color: var(--color2);
-    font-size: 32px;
+    font-size: 24px;
     text-shadow: 2px 2px var(--color5);
 }
 
 #content > h1 + ul + p {
     line-height: 2;
-    font-size: 13px;
+    font-size: 11px;
     font-family: 'Roboto Slab', serif;
     text-align: justify;
     text-justify: inter-word;
