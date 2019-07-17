@@ -1,3 +1,6 @@
-# My Web Developer Portfolio
+# project-build-a-personal-portfolio-webpage
 
-A static website displaying the projects I have created for the web.
+A freeCodeCamp - Responsive Web Design Certification: Build A Personal Portfolio Webpage project.
+
+---
+Created by [Billy Arante](#) from the [Philippines](#)
