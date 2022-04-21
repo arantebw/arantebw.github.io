@@ -1,7 +1,14 @@
 /*
- *
+ * CSS reset
+ */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+/*
  * General rules
- *
  */
 :root {
     --color1: #008eb3;
@@ -12,13 +19,10 @@
     --color5: #bb8f5b;
 }
 
-* {
+html,
+body {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-}
-
-body {
     font-family: 'Muli', sans-serif;
 }
 
@@ -31,9 +35,7 @@ body {
 }
 
 /*
- *
  * Profile section
- *
  */
 
 #profile {
@@ -125,14 +127,14 @@ body {
     font-size: 24px;
 }
 
-#content > h1 + ul + p {
-    line-height: 2;
-    font-size: 11px;
-    font-family: 'Roboto Slab', serif;
-    text-align: justify;
-    text-justify: inter-word;
-    text-indent: 32px;
+.bio {
+  line-height: 1.5;
+  font-family: 'Roboto Slab', serif;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 16px;
 }
+
 #content > h1 + ul + p:first-letter {
     font-size: 54px;
     font-family: 'Tangerine';
@@ -154,10 +156,8 @@ body {
 }
 
 /*
-*
-* Footer
-*
-*/
+ * Footer
+ */
 
 #links {
     position: fixed;
