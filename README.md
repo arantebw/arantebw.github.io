@@ -1,6 +1,7 @@
-# build-a-personal-portfolio-webpage
+# portfolio
 
-A freeCodeCamp - Responsive Web Design Certification: Build A Personal Portfolio Webpage project.
+This is my take on the Free Code Camp's Responsive Web Design Certification: Build A Personal Portfolio Webpage project.
 
 ---
-Created by [Billy Arante](https://arantebw.github.io/) from the [Philippines](#)
+
+Created by [Billy Arante](https://arantebw.github.io/) from the [Antique, Philippines](#)
