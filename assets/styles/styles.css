@@ -24,6 +24,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Muli', sans-serif;
+  color: #808080;
 }
 
 #profile > div > header > a#left:hover,
@@ -126,8 +127,7 @@ body {
 .bio {
   line-height: 1.5;
   font-family: 'Roboto Slab', serif;
-  text-align: justify;
-  text-justify: inter-word;
+  text-align: left;
   margin-bottom: 16px;
 }
 
@@ -180,4 +180,13 @@ body {
   text-decoration: none;
   border-bottom: 1px dotted;
   padding-bottom: 2px;
+}
+
+.roles {
+  font-size: 28px;
+  color: var(--color5);
+  font-family: 'Yesteryear';
+  font-weight: 100;
+  margin-top: 24px;
+  text-shadow: 1px 1px var(--color2);
 }
