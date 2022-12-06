@@ -27,14 +27,6 @@ body {
   color: #808080;
 }
 
-#profile > div > header > a#left:hover,
-#profile > div > header > a#right:hover,
-#contact > footer > p > a:hover,
-#content > h1 + ul + p > a:hover,
-#links > ul > li > a:hover {
-  border-bottom: 1px solid;
-}
-
 /*
  * Profile section
  */
@@ -167,7 +159,6 @@ body {
 }
 
 #links > ul > li {
-  text-transform: lowercase;
   display: inline-block;
 }
 
@@ -178,8 +169,15 @@ body {
 #links > ul > li > a {
   color: #000;
   text-decoration: none;
-  border-bottom: 1px dotted;
-  padding-bottom: 2px;
+  padding: 8px;
+  line-height: 16px;
+  font-weight: bold;
+  transition: color 1s, fill 1s, background-color 1s;
+}
+#links > ul > li > a:hover {
+  color: var(--color5);
+  fill: var(--color5); /* for svg element */
+  background-color: var(--color2);
 }
 
 .roles {
@@ -189,4 +187,8 @@ body {
   font-weight: 100;
   margin-top: 24px;
   text-shadow: 1px 1px var(--color2);
+}
+
+svg {
+  height: 16px;
 }
