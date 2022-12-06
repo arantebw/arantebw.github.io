@@ -195,3 +195,21 @@ a#right:hover {
 svg {
   height: 16px;
 }
+
+span.roles:nth-child(odd) {
+  position: relative;
+  top: -16px;
+  padding-bottom: 8px;
+  border-bottom: 8px dotted var(--color2);
+} 
+span.roles:nth-child(even) {
+  position: relative;
+  bottom: -16px;
+  padding-top: 8px;
+  border-top: 8px dotted var(--color2);
+}
+
+#content h2 {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
