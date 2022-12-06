@@ -53,12 +53,17 @@ body {
 		font-size: 1em;
 		text-decoration: none;
 		position: absolute;
-		top: 15px;
+		top: 16px;
 		color: #000;
 		border-bottom: 1px dotted;
 		padding-bottom: 2px;
-		left: 16px;
 		line-height: 16px;
+}
+#profile > div > header > a#left {
+		left: 16px;
+}
+#profile > div > header > a#right {
+		right: 16px;
 }
 
 #profile > div > #content > img {
