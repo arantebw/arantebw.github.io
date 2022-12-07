@@ -17,6 +17,7 @@
   --color3: #a7e5e0;
   --color4: #e4dbbe;
   --color5: #bb8f5b;
+  --p-text: #808080;
 }
 
 html,
@@ -24,7 +25,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Muli', sans-serif;
-  color: #808080;
+  color: var(--p-text);
 }
 
 /*
@@ -212,4 +213,14 @@ span.roles:nth-child(even) {
 #content h2 {
   margin-top: 24px;
   margin-bottom: 32px;
+}
+
+.text-link {
+  color: var(--p-text);
+  text-decoration: none;
+  border-bottom: 2px dotted var(--p-text);
+}
+.text-link:hover {
+  color: var(--color5);
+  border-bottom: 2px solid var(--color5);
 }
