@@ -184,6 +184,15 @@ a#right:hover {
   text-shadow: 1px 1px var(--color2);
   text-align: center;
   margin: 1rem 0 0;
+
+  @media (max-width: 320px) {
+    font-size: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    text-align: left;
+    padding-left: 8px;
+  }
 }
 
 svg {
