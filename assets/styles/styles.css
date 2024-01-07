@@ -32,6 +32,10 @@ body {
   color: var(--p-text);
 }
 
+main#wrapper {
+  max-width: 768px;
+}
+
 /*
  *
  * Profile section
@@ -136,11 +140,13 @@ body {
   font-size: 24px;
 }
 
-.bio {
+p.bio {
   line-height: 1.5;
   font-family: 'Roboto Slab', serif;
   text-align: left;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #content > h1 + ul + p > a {
@@ -182,16 +188,12 @@ a#right:hover {
   font-family: 'Yesteryear';
   font-weight: 100;
   text-shadow: 1px 1px var(--color2);
-  text-align: center;
+  text-align: left;
   margin: 1rem 0 0;
+  padding-left: 1rem;
 
   @media (max-width: 320px) {
     font-size: 3rem;
-  }
-
-  @media (min-width: 768px) {
-    text-align: left;
-    padding-left: 8px;
   }
 }
 
