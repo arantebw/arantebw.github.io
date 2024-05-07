@@ -1,7 +1,5 @@
 /*
- *
  * CSS reset
- *
  */
 *,
 ::before,
@@ -62,9 +60,7 @@
 }
 
 /*
- *
  * General rules
- *
  */
 :root {
   --color1: #008eb3;
@@ -89,9 +85,7 @@ main#wrapper {
 }
 
 /*
- *
  * Profile section
- *
  */
 #profile {
   & > div {
@@ -113,7 +107,6 @@ main#wrapper {
   color: #000;
   padding: 1rem;
   line-height: 1rem;
-  font-weight: bold;
   transition:
     color 0.2s,
     fill 0.2s,
@@ -121,6 +114,8 @@ main#wrapper {
   display: flex;
   column-gap: 0.5rem;
   justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 1;
 }
 
 .button-links {
@@ -131,7 +126,6 @@ main#wrapper {
   color: #000;
   padding: 1rem;
   line-height: 1rem;
-  font-weight: bold;
   transition:
     color 0.2s,
     fill 0.2s,
@@ -162,7 +156,6 @@ main#wrapper {
 #content-header {
   color: var(--color2);
   font-size: 32px;
-  font-weight: 900;
   text-shadow: 2px 2px var(--color5);
   letter-spacing: 1px;
 }
@@ -170,7 +163,6 @@ main#wrapper {
 #my-name {
   font-size: 96px;
   color: var(--color5);
-  font-weight: 100;
   margin-top: 24px;
   text-shadow: 2px 2px var(--color2);
 }
@@ -187,7 +179,6 @@ main#wrapper {
 
 #content > h1 + ul > li {
   font-size: 19px;
-  font-weight: 900;
   display: inline-block;
   letter-spacing: 1px;
 }
@@ -213,9 +204,7 @@ p.bio {
 }
 
 /*
- *
  * Footer
- *
  */
 
 #links {
@@ -241,7 +230,6 @@ a#right:hover {
 .roles {
   font-size: 4rem;
   color: var(--color5);
-  font-weight: 100;
   text-shadow: 1px 1px var(--color2);
   text-align: left;
   margin: 1rem 0 0;
