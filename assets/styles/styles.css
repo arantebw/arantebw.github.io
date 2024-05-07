@@ -266,3 +266,9 @@ span.roles:nth-child(even) {
   color: var(--color5);
   border-bottom: 2px solid var(--color5);
 }
+
+.bio-text {
+  background-color: #f8f8f8;
+  padding: 8px;
+  opacity: 0.9;
+}
