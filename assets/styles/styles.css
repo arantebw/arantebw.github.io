@@ -10,6 +10,58 @@
 }
 
 /*
+ * Google Fonts
+ */
+
+.kanit-light {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.kanit-light-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kanit-regular-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.kanit-bold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.kanit-bold-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.kanit-medium {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kanit-medium-italic {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/*
  *
  * General rules
  *
@@ -28,7 +80,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Muli', sans-serif;
   color: var(--p-text);
 }
 
@@ -43,7 +94,6 @@ main#wrapper {
  *
  */
 #profile {
-
   & > div {
     padding: 1rem;
 
@@ -64,7 +114,10 @@ main#wrapper {
   padding: 1rem;
   line-height: 1rem;
   font-weight: bold;
-  transition: color 0.2s, fill 0.2s, background-color 0.2s;
+  transition:
+    color 0.2s,
+    fill 0.2s,
+    background-color 0.2s;
   display: flex;
   column-gap: 0.5rem;
   justify-content: center;
@@ -79,7 +132,10 @@ main#wrapper {
   padding: 1rem;
   line-height: 1rem;
   font-weight: bold;
-  transition: color 0.2s, fill 0.2s, background-color 0.2s;
+  transition:
+    color 0.2s,
+    fill 0.2s,
+    background-color 0.2s;
   display: flex;
   column-gap: 0.5rem;
   justify-content: center;
@@ -100,7 +156,8 @@ main#wrapper {
   color: #003366;
 }
 
-#content {}
+#content {
+}
 
 #content-header {
   color: var(--color2);
@@ -113,7 +170,6 @@ main#wrapper {
 #my-name {
   font-size: 96px;
   color: var(--color5);
-  font-family: 'Yesteryear';
   font-weight: 100;
   margin-top: 24px;
   text-shadow: 2px 2px var(--color2);
@@ -143,7 +199,6 @@ main#wrapper {
 
 p.bio {
   line-height: 1.5;
-  font-family: 'Roboto Slab', serif;
   text-align: left;
   margin-bottom: 1rem;
   padding-left: 1rem;
@@ -186,7 +241,6 @@ a#right:hover {
 .roles {
   font-size: 4rem;
   color: var(--color5);
-  font-family: 'Yesteryear';
   font-weight: 100;
   text-shadow: 1px 1px var(--color2);
   text-align: left;
@@ -207,7 +261,7 @@ span.roles:nth-child(odd) {
   top: -16px;
   padding-bottom: 8px;
   border-bottom: 8px dotted var(--color2);
-} 
+}
 span.roles:nth-child(even) {
   position: relative;
   bottom: -16px;
