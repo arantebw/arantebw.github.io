@@ -248,10 +248,10 @@ p.bio {
  * Footer
  */
 
-#links {
+section#links {
   width: 100%;
   text-align: center;
-  padding: 24px;
+  padding: 24px 24px 0;
 
   > ul {
     list-style: none;
@@ -265,6 +265,11 @@ p.bio {
       background-color: var(--color4);
     }
   }
+}
+
+section#notifs {
+  padding: 24px;
+  color: var(--color3);
 }
 
 /*
