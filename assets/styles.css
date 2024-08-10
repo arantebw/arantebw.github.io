@@ -300,13 +300,15 @@ span.roles:nth-child(even) {
 }
 
 .text-link {
-  color: var(--p-text);
+  color: white;
   text-decoration: none;
-  border-bottom: 2px dotted var(--p-text);
+  border-bottom: 2px dotted white;
+  padding-bottom: 2px;
 }
 .text-link:hover {
-  color: var(--color5);
-  border-bottom: 2px solid var(--color5);
+  color: var(--color4);
+  border-bottom: 2px solid var(--color4);
+  opacity: 1;
 }
 
 .button-links {
