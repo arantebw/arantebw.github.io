@@ -138,14 +138,16 @@ body {
 }
 
 body.ubuntu-regular {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @media (min-width: 426px) {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  & > main#wrapper {
-    max-width: 768px;
+    & > main#wrapper {
+      max-width: 768px;
+    }
   }
 }
 
@@ -154,7 +156,7 @@ body.ubuntu-regular {
  */
 #profile {
   & > div {
-    padding: 24px;
+    padding: 24px 24px 0;
     display: flex;
     flex-direction: column;
     row-gap: 24px;
@@ -194,36 +196,11 @@ a#right:hover {
   fill: var(--color4);
 }
 
-.button-links {
-  width: fit-content;
-  text-align: center;
-  font-size: 1rem;
-  text-decoration: none;
-  color: #000;
-  padding: 24px;
-  line-height: 1rem;
-  transition:
-    color 0.2s,
-    fill 0.2s,
-    background-color 0.2s;
-  display: flex;
-  column-gap: 0.5rem;
-  justify-content: center;
-}
-
 #profile > div > #content > img {
   height: 30vh;
   border-radius: 50%;
   border: 8px dotted var(--color2);
   padding: 24px;
-}
-
-#profile > div > a:last-child {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #003366;
 }
 
 #content {
@@ -244,27 +221,6 @@ a#right:hover {
   color: var(--color5);
   margin-top: 24px;
   text-shadow: 2px 2px var(--color4);
-}
-
-#content > h1 + ul {
-  list-style: none;
-  color: #fff;
-  margin-bottom: 24px;
-}
-#content > h1 + ul,
-#content > h1 + ul > li > span {
-  color: #fff;
-}
-
-#content > h1 + ul > li {
-  font-size: 19px;
-  display: inline-block;
-  letter-spacing: 1px;
-}
-
-#content > h1 + ul > li > span.current-role {
-  color: var(--color2);
-  font-size: 24px;
 }
 
 div.bio-text {
@@ -298,17 +254,22 @@ p.bio {
   padding: 24px;
 
   > ul {
-    margin: 1rem 0;
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    & > li > a:hover {
+      background-color: var(--color4);
+    }
   }
 }
 
-#links > ul > li > a:hover {
-  color: var(--color5);
-  fill: var(--color5); /* for svg element */
-  background-color: var(--color2);
-}
+/*
+ * General
+ */
 
 .roles {
   font-size: 4rem;
@@ -322,6 +283,7 @@ p.bio {
 
 svg {
   height: 1.5rem;
+  width: 1.5rem;
 }
 
 span.roles:nth-child(odd) {
@@ -345,4 +307,26 @@ span.roles:nth-child(even) {
 .text-link:hover {
   color: var(--color5);
   border-bottom: 2px solid var(--color5);
+}
+
+.button-links {
+  width: fit-content;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color1);
+  fill: var(--color1);
+  padding: 8px 16px;
+  line-height: 1rem;
+  transition:
+    color 0.2s,
+    fill 0.2s,
+    background-color 0.2s;
+  display: flex;
+  column-gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color2);
+  border-radius: 40px;
 }
