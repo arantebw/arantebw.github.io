@@ -167,8 +167,8 @@ body.ubuntu-regular {
   }
 }
 
-#left,
-#right {
+a#left,
+a#right {
   width: fit-content;
   text-align: center;
   font-size: 1rem;
@@ -182,8 +182,16 @@ body.ubuntu-regular {
   display: flex;
   column-gap: 0.5rem;
   justify-content: center;
+  align-items: center;
   text-transform: uppercase;
   letter-spacing: 1;
+  color: var(--color3);
+  fill: var(--color3);
+}
+a#left:hover,
+a#right:hover {
+  color: var(--color4);
+  fill: var(--color4);
 }
 
 .button-links {
@@ -296,9 +304,7 @@ p.bio {
   }
 }
 
-#links > ul > li > a:hover,
-a#left:hover,
-a#right:hover {
+#links > ul > li > a:hover {
   color: var(--color5);
   fill: var(--color5); /* for svg element */
   background-color: var(--color2);
@@ -315,7 +321,7 @@ a#right:hover {
 }
 
 svg {
-  height: 1rem;
+  height: 1.5rem;
 }
 
 span.roles:nth-child(odd) {
