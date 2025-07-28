@@ -177,7 +177,6 @@ body.ubuntu-regular {
   }
 }
 
-a#left,
 a#right {
   width: fit-content;
   text-align: center;
@@ -198,7 +197,6 @@ a#right {
   color: var(--color3);
   fill: var(--color3);
 }
-a#left:hover,
 a#right:hover {
   color: var(--color4);
   fill: var(--color4);
@@ -238,13 +236,6 @@ p.bio {
   text-align: left;
 }
 
-#content > h1 + ul + p > a {
-  color: #000;
-  text-decoration: none;
-  border-bottom: 1px dotted;
-  padding-bottom: 2px;
-}
-
 /*
  * Footer
  */
@@ -268,11 +259,6 @@ section#links {
   }
 }
 
-section#notifs {
-  padding: 24px;
-  color: var(--color3);
-}
-
 /*
  * General
  */
@@ -292,13 +278,13 @@ svg {
   width: 1.5rem;
 }
 
-span.roles:nth-child(odd) {
+h2.roles:nth-child(odd) {
   position: relative;
   top: -16px;
   padding-bottom: 24px;
   border-bottom: 24px dotted var(--color2);
 }
-span.roles:nth-child(even) {
+h2.roles:nth-child(even) {
   position: relative;
   bottom: -16px;
   padding-top: 24px;
