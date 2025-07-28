@@ -217,13 +217,6 @@ a#right:hover {
   row-gap: 24px;
 }
 
-#content-header {
-  color: var(--color2);
-  font-size: 32px;
-  text-shadow: 2px 2px var(--color5);
-  letter-spacing: 1px;
-}
-
 #my-name {
   font-size: var(--font-size-x-large);
   color: var(--color4);
