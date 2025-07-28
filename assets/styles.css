@@ -127,6 +127,13 @@ h6 {
   --color2: rgb(4, 41, 58);
   --color3: rgb(6, 70, 99);
   --color4: rgb(236, 179, 101);
+  --font-size-xx-small: 0.75rem; /* ~12px */
+  --font-size-x-small: 1rem; /* 16px */
+  --font-size-small: 1.33rem; /* ~21px */
+  --font-size-medium: 1.78rem; /* ~28px */
+  --font-size-large: 2.37rem; /* ~38px */
+  --font-size-x-large: 3.16rem; /* ~51px */
+  --font-size-xx-large: 4.21rem; /* ~67px */
 }
 
 html,
@@ -135,6 +142,7 @@ body {
   margin: 0;
   background-color: var(--color1);
   color: rgb(255, 255, 255);
+  font-size: var(--font-size-x-small); /* base font size */
 }
 
 body.ubuntu-regular {
@@ -173,7 +181,7 @@ a#left,
 a#right {
   width: fit-content;
   text-align: center;
-  font-size: 1rem;
+  font-size: var(--font-size-x-small);
   text-decoration: none;
   color: #000;
   line-height: 1rem;
@@ -217,10 +225,10 @@ a#right:hover {
 }
 
 #my-name {
-  font-size: 96px;
-  color: var(--color5);
+  font-size: var(--font-size-x-large);
+  color: var(--color4);
   margin-top: 24px;
-  text-shadow: 2px 2px var(--color4);
+  text-shadow: 2px 2px var(--color3);
 }
 
 div.bio-text {
@@ -230,6 +238,7 @@ div.bio-text {
   display: flex;
   flex-direction: column;
   row-gap: 24px;
+  font-size: var(--font-size-small);
 }
 p.bio {
   line-height: 1.5;
@@ -318,7 +327,7 @@ span.roles:nth-child(even) {
 .button-links {
   width: fit-content;
   text-align: center;
-  font-size: 1rem;
+  font-size: var(--font-size-x-small);
   font-weight: bold;
   text-decoration: none;
   color: var(--color1);
