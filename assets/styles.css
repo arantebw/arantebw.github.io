@@ -168,38 +168,69 @@ body.ubuntu-regular {
     display: flex;
     flex-direction: column;
     row-gap: 24px;
-
-    & > header {
-      display: flex;
-      flex-direction: row;
-      column-gap: 24px;
-    }
   }
 }
 
-a#right {
-  width: fit-content;
-  text-align: center;
-  font-size: var(--font-size-x-small);
-  text-decoration: none;
-  color: #000;
-  line-height: 1rem;
-  transition:
-    color 0.2s,
-    fill 0.2s,
-    background-color 0.2s;
+/*
+ * Navbar (mobile-first)
+ * Colors, weight, casing and hover follow the site's existing link style.
+ * Base: three equal columns, icon stacked above label.
+ * >= 480px: inline row of icon + label.
+ */
+.site-nav {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.nav-link {
   display: flex;
-  column-gap: 0.5rem;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  padding: 8px 0;
+  font-size: var(--font-size-xx-small);
+  line-height: 1rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  letter-spacing: 1;
+  text-decoration: none;
+  white-space: nowrap;
   color: var(--color3);
   fill: var(--color3);
+  transition:
+    color 0.2s,
+    fill 0.2s;
 }
-a#right:hover {
+
+.nav-link > svg {
+  flex-shrink: 0;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
   color: var(--color4);
   fill: var(--color4);
+}
+
+.nav-link:focus-visible {
+  outline: 2px solid var(--color4);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+@media (min-width: 480px) {
+  .site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+  }
+
+  .nav-link {
+    flex-direction: row;
+    font-size: var(--font-size-x-small);
+  }
 }
 
 #profile > div > #content > img {
