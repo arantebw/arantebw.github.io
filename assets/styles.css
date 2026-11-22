@@ -247,7 +247,8 @@ body.ubuntu-regular {
 }
 
 #my-name {
-  font-size: var(--font-size-x-large);
+  font-size: clamp(var(--font-size-medium), 8vw, var(--font-size-x-large));
+  line-height: 1.2;
   color: var(--color4);
   margin-top: 24px;
   text-shadow: 2px 2px var(--color3);
@@ -255,12 +256,17 @@ body.ubuntu-regular {
 
 div.bio-text {
   background-color: var(--color2);
-  padding: 24px;
+  padding: 16px;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-x-small);
+
+  @media (min-width: 480px) {
+    padding: 24px;
+    font-size: var(--font-size-small);
+  }
 }
 p.bio {
   line-height: 1.5;
@@ -271,21 +277,26 @@ p.bio {
  * Footer
  */
 
+/*
+ * Links (mobile-first)
+ * Base: stacked, full-width, touch-sized buttons (two columns when they fit).
+ * >= 480px: buttons size to content and wrap inline.
+ */
 section#links {
   width: 100%;
-  text-align: center;
-  padding: 24px 24px 0;
+  padding: 24px;
 
   > ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    gap: 12px;
 
-    & > li > a:hover {
-      background-color: var(--color4);
+    @media (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
     }
   }
 }
@@ -307,6 +318,7 @@ section#links {
 svg {
   height: 1.5rem;
   width: 1.5rem;
+  flex-shrink: 0;
 }
 
 h2.roles:nth-child(odd) {
@@ -329,23 +341,43 @@ h2.roles:nth-child(even) {
 }
 
 .button-links {
-  width: fit-content;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 16px;
   font-size: var(--font-size-x-small);
   font-weight: bold;
-  text-decoration: none;
-  color: var(--color1);
-  fill: var(--color1);
-  padding: 8px 16px;
   line-height: 1rem;
+  white-space: nowrap;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  fill: var(--color4);
+  background-color: var(--color2);
+  border: 1px solid var(--color3);
+  border-radius: 40px;
   transition:
     color 0.2s,
     fill 0.2s,
-    background-color 0.2s;
-  display: flex;
-  column-gap: 0.5rem;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color2);
-  border-radius: 40px;
+    background-color 0.2s,
+    border-color 0.2s;
+
+  @media (min-width: 480px) {
+    width: fit-content;
+  }
+}
+
+.button-links:hover,
+.button-links:focus-visible {
+  color: var(--color1);
+  fill: var(--color1);
+  background-color: var(--color4);
+  border-color: var(--color4);
+}
+
+.button-links:focus-visible {
+  outline: 2px solid var(--color4);
+  outline-offset: 4px;
 }
